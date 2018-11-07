@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 2
+   
+   Save your Fork Graphic Design Styles
+   Author: Ryan Wahl
+   Date:   11.7.18
+
+   Filename: sf_effects.css
+
+*/
+
+/* Body Header Styles */
+body {
+    /* Adds a shadow around the body so it looks like it is above the page. */
+    box-shadow: rgb(51, 51, 51) 10px 0 50px, rgb(51, 51, 51) -10px 0 50px;
+}
+
+
+/* Navigation Tabs List Styles */
+body>header nav.tabs {
+    /* Sets the background to the sf_back1.png */
+    background: url(sf_back1.png);
+    /* Prevents the image from repeating */
+    background-repeat: no-repeat;
+    /* Sets the size to 100% */
+    background-size: 100%;
+    /* Centers the background */
+    background-position: horizontal vertical;
+}
+
+body>header nav.tabs li {
+    /* Changes the 3d perspective to 50 pixels and rotates the list items by 20 degrees on the x-axis */
+    transform: perspective(50px) rotateX(20deg);
+}
+
+body>header nav.tabs li:hover {
+    /* Sets the background color to a white/light gray color when the list item is hover over. */
+    background-color: rgb(231, 231, 231);
+}
+
+/* Left Section Styles */
+section#left nav.vertical {
+    /* Sets the border to 1 pixel and solid with a blue color */
+    border: 1px solid rgb(20, 167, 170);
+    /* Sets the border corner radius to 25 pixels to make the corners round. */
+    border-radius: 25px;
+}
+
+section#left nav.vertical h1 {
+    /* Sets the top left and right corner radius to make them round/ */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+
+/* Center Article Styles */
+section#center article {
+    /* Sets the background to a circle gradient that is 30% white and the rest gray. */
+    background: radial-gradient(white 30%, rgb(151, 151, 151));
+    /* Adds a border that is gray and 1 pixel */
+    border: 1px solid rgb(151, 151, 151);
+    /* Sets the border radius to 50 pixels to make the corners round. */
+    border-radius: 50px;
+    /* Sets the box shadow to and offset of (10, 10) pixels and a blur of 20 pixels. */
+    box-shadow: rgb(51, 51, 51) 10px 10px 20px;
+}
+
+
+
+/* Blockquote Styles */
+blockquote {
+    /* Sets the background image to sf_speech.png */
+    background-image: url(sf_speech.png);
+    /* Sets no-tiling to none */
+    background-repeat: no-repeat;
+    /* Sets the background size to 100% both vertically and horizontally. */
+    background-size: 100% 100%;
+    /* Adds a filter of drop-shadow to the background image. (Uses progressive enhancements) */
+    -webkit-filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+    filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+}
+
+cite img {
+    /* Sets the border radius of the cite images to 50% to make the images round. */
+    border-radius: 50%;
+}
